@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: jaffle_shop
+    database: reza_khan
+    schema: training_raw_jaffle_shop
+    tables:
+      - name: customers
+      - name: orders
+            
+            
