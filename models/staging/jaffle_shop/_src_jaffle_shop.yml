@@ -1,10 +1,21 @@
 sources:
   - name: jaffle_shop
     database: reza_khan  
-    schema: training_raw_jaffle_shop  
+    schema: training_raw_jaffle_shop
+    config:
+      freshness:
+        warn_after:
+          count: 12
+          period: hour
+        error_after:
+          count: 1
+          period: day
+      loaded_at_field: _etl_loaded_at 
     tables:
-      - name: orders
       - name: customers
+        config:
+          freshness: null
+      - name: orders        
 
   - name: stripe
     schema: training_raw_stripe 
