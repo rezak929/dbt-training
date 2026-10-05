@@ -1,0 +1,12 @@
+sources:
+  - name: jaffle_shop
+    database: reza_khan  
+    schema: training_raw_jaffle_shop  
+    tables:
+      - name: orders
+      - name: customers
+
+  - name: stripe
+    schema: training_raw_stripe 
+    tables:
+      - name: payment
