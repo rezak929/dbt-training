@@ -1,0 +1,8 @@
+sources:
+  rezak_snowflake_demo:
+    type: snowflake
+    account: "{{ env_var('DCT_REZAK_SNOWFLAKE_DEMO_ACCOUNT', 'unused') }}"
+    user: "{{ env_var('DCT_REZAK_SNOWFLAKE_DEMO_USER', 'readonly') }}"
+    password: "{{ env_var('DCT_REZAK_SNOWFLAKE_DEMO_PASSWORD', 'unused') }}"
+    database: "{{ env_var('DCT_REZAK_SNOWFLAKE_DEMO_DATABASE', 'analytics') }}"
+    warehouse: "{{ env_var('DCT_REZAK_SNOWFLAKE_DEMO_WAREHOUSE', 'compute_wh') }}"
